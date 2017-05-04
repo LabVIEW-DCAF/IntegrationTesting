@@ -116,8 +116,8 @@
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
-	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
-		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
+	<Item Name="cRIO9068" Type="RT CompactRIO">
+		<Property Name="alias.name" Type="Str">cRIO9068</Property>
 		<Property Name="alias.value" Type="Str">0.0.0.0</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
@@ -340,7 +340,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{6B75F018-AFB8-4DD7-84E1-DCABD46E9E8D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO All Modules Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/cRIO9068/cRIO All Modules Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
