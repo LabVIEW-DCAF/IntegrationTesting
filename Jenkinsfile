@@ -3,10 +3,21 @@
 echo 'Starting pipeline'
 
 node{
+      echo 'Starting build...'
+      stage ('Pre-Clean'){
+        preClean()
+      }
       stage ('SCM_Checkout'){
         echo 'Attempting to get source from repo...'
         checkout scm
       }
+        stage ('Check Preconditions for Build'){
+        continueBuild=checkCommits()
+      }
+    if(continueBuild){
+        stage ('Temp Directories'){
+          bat 'mkdir build_temp'
+        }
     stage('Windows EXE'){  
         lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "My Computer", "")
     }      
