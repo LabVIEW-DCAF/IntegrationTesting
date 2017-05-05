@@ -8,6 +8,6 @@ node{
         checkout scm
       }    
     stage('Build LV EXE'){  
-        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "CRIO9068", "Test Build")
+        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9068", "Test Build")
     }
 }
