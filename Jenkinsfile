@@ -15,5 +15,8 @@ node{
     }
     stage('cRIO x86 EXE'){  
         lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9039", "")
-    }      
+    }
+     stage ('Post-Clean'){
+        postClean()
+    }   
 }
