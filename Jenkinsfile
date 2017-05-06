@@ -9,7 +9,7 @@ node{
     }
     stage ('Update Packages'){
         echo 'Updating all installed packages to latest version on internal repo'
-        vipmUpdate("2014")
+        vipmUpdate("14.0")
     }
     stage ('SCM_Checkout'){
         echo 'Attempting to get source from repo...'
