@@ -107,13 +107,55 @@
 				<Item Name="UI Reference configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/UI/configuration/UI Reference configuration.lvclass"/>
 				<Item Name="UI Reference runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/UI/execution/UI Reference runtime.lvclass"/>
 				<Item Name="usec timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/usec timing source/usec timing source.lvclass"/>
+				<Item Name="validate control references.vi" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/Modules/UI/execution/validate control references.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="worker pool.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/worker library/worker pool.lvlib"/>
 				<Item Name="write syslog.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Syslog Wrapper - Linux/write syslog.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Test Build - PC" Type="EXE">
+				<Property Name="App_INI_aliasGUID" Type="Str">{B9BDA1FF-A347-4D7E-A448-82B674545155}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{42D09BAE-1743-45C7-9417-581277C69886}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{51F8FF96-A9ED-41D4-A915-91E68E4CB96A}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test Build - PC</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Test Build - PC</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{E776BE48-1ED7-446B-B34F-19C72D999D0B}</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/All Module Integration Test/pclog.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">PC.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Test Build - PC/PC.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Test Build - PC/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7547019C-A6C7-493F-97B0-55163C187A67}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PC Benchmarking.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">NI</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test Build - PC</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test Build - PC</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 NI</Property>
+				<Property Name="TgtF_productName" Type="Str">Test Build - PC</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{876D9006-280A-4E34-920B-5BFEC3BBB484}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">PC.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 	<Item Name="cRIO9068" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">cRIO9068</Property>
@@ -308,26 +350,27 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Test Build" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
+			<Item Name="Test Build - 9068" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
 				<Property Name="App_INI_aliasGUID" Type="Str">{45C7229B-42D1-4E68-86A4-3AA2D1835C8B}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{FBEE92A6-8D9C-4D44-9DEC-C9862C0AA4E9}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{9A50E5B9-99D9-4223-B8CD-459252413699}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Test Build</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test Build - 9068</Property>
 				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Test Build</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Test Build - 9068</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{82457529-2A62-4772-8C02-FF0576D68544}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/All Module Integration Test/9068log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
-				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
+				<Property Name="Destination[0].destName" Type="Str">9068.rtexe</Property>
+				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/9068.rtexe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -335,7 +378,7 @@
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{6B75F018-AFB8-4DD7-84E1-DCABD46E9E8D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5B55498C-7406-4B7B-9B30-919958E21849}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO9068/cRIO All Modules Main.vi</Property>
@@ -343,12 +386,12 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Test Build</Property>
-				<Property Name="TgtF_internalName" Type="Str">Test Build</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test Build - 9068</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test Build - 9068</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 National Instruments</Property>
-				<Property Name="TgtF_productName" Type="Str">Test Build</Property>
+				<Property Name="TgtF_productName" Type="Str">Test Build - 9068</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{B7AC0FA0-9B36-4E80-86C0-D0B085952703}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">9068.rtexe</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -544,26 +587,27 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Test Build" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
+			<Item Name="Test Build - 9039" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
 				<Property Name="App_INI_aliasGUID" Type="Str">{9D372738-A782-49EB-B598-B76701691037}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{199450C7-AE64-431B-A9C8-6321D6BDDAC9}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{850B2328-E0C9-4E89-BFB8-11FA5A610BB9}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Test Build</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test Build - 9039</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Test Build</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Test Build - 9039</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2160A9DD-01C0-4324-87F3-5A6148AF9F3F}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/All Module Integration Test/9039log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
-				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
+				<Property Name="Destination[0].destName" Type="Str">9039.rtexe</Property>
+				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/9039.rtexe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -571,7 +615,7 @@
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0CB50418-ABAE-4D3B-981E-C6C9B2681C43}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1AD50153-C6F6-4EE6-99F6-DE5F2E865A19}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO9039/cRIO All Modules Main.vi</Property>
@@ -579,12 +623,12 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">NI</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Test Build</Property>
-				<Property Name="TgtF_internalName" Type="Str">Test Build</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test Build - 9039</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test Build - 9039</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 NI</Property>
-				<Property Name="TgtF_productName" Type="Str">Test Build</Property>
+				<Property Name="TgtF_productName" Type="Str">Test Build - 9039</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{BE1A0DDB-83D9-4A0D-853E-41F8B353F79B}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">9039.rtexe</Property>
 			</Item>
 		</Item>
 	</Item>
