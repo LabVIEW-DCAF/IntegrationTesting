@@ -19,7 +19,7 @@ node{
         bat 'mkdir build_temp'
     }
     stage('Config File Check'){  
-        utfTest("config file compatibility\\config check.lvproj")
+        utfTest("config file compatibility\\config check.lvproj", "2014")
     }      
     stage('Windows EXE'){  
         lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "My Computer", "")
