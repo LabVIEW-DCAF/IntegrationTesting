@@ -9,7 +9,7 @@ node{
     }
     stage ('Update Packages'){
         echo 'Updating all installed packages to latest version on internal repo'
-        vipmUpdate("14.0")
+        vipmUpdate("2014")
     }
     stage ('SCM_Checkout'){
         echo 'Attempting to get source from repo...'
@@ -19,16 +19,16 @@ node{
         bat 'mkdir build_temp'
     }
     stage('Config File Check'){  
-        utfTest("config file compatibility\\config check.lvproj")
+        utfTest("config file compatibility\\config check.lvproj", "2014")
     }      
     stage('Windows EXE'){  
-        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "My Computer", "")
+        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "My Computer", "", "2014")
     }      
     stage('cRIO ARM EXE'){  
-        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9068", "")
+        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9068", "", "2014")
     }
     stage('cRIO x86 EXE'){  
-        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9039", "")
+        lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9039", "", "2014")
     }
      stage ('Post-Clean'){
         postClean()
