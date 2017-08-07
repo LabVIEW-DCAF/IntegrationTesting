@@ -52,7 +52,7 @@
           'global': false,
           // TODO: branch should be master for final submission
           // TODO: we should specify the file that's loaded dynamically for easily making new tests
-          'url': `http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/Integration/${build_number}/artifact/build_temp/exec_time.json`,
+          'url': `http://vm-dcaf-bld-14:8080/job/Integration/${build_number}/artifact/build_temp/exec_time.json`,
           'dataType': "jsonp",
           'error': function (request) { handleAjaxError(request); },
 
@@ -70,7 +70,7 @@
         console.log('a');
         $.ajax({
           'global': false,
-          'url': 'http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsData',
+          'url': 'http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsData',
           'dataType': "jsonp",
           'error': function (request) { handleAjaxError(request); },
         });
