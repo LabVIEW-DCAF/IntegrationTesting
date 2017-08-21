@@ -16,7 +16,7 @@ node('proto'){
         def diffDir = "${WORKSPACE}\\diff_dir"
         bat "mkdir ${diffDir}"
         def lv_version = "2014"
-        bat "git difftool --no-prompt --extcmd=\"labview-cli --kill --lv-ver ${lv_version} C:\\jenkins-buildsystem\\lvDiff.vi -- \'\$LOCAL\' \'\$REMOTE\' ${diffDir}\" origin/master HEAD"
+        bat "git difftool --no-prompt --extcmd=\"labview-cli --kill --lv-ver ${lv_version} \"C:\\jenkins-buildsystem\\lvDiff.vi\" -- \'\$LOCAL\' \'\$REMOTE\' ${diffDir}\" origin/master HEAD"
     }
      stage ('Post-Clean'){
         postClean()
