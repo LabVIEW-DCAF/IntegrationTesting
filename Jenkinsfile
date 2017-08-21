@@ -18,7 +18,4 @@ node('proto'){
         def lv_version = "2014"
         bat "git difftool --no-prompt --extcmd=\"'C:\\jenkins-buildsystem\\labview.bat' \$LOCAL \$REMOTE diff_dir\" origin/master HEAD"
     }
-     stage ('Post-Clean'){
-        postClean()
-    }
 }
