@@ -14,7 +14,7 @@ node('proto'){
     stage ('Git Diff'){
         echo 'Running LabVIEW diff build between origin/master and this commit' 
         diffDir = '${WORKSPACE}\\diff_dir'
-        mkdir diffDir
+        bat 'mkdir ${diffDir}'
         lv_version = "2014"
         bat 'git difftool -x="labview-cli --kill --lv-ver ${lv_version} C:\\jenkins-buildsystem\\lvDiff.vi -- \"$LOCAL\" \"$REMOTE\" ${diffDir}" origin/master ${GIT_COMMIT}'
     }
