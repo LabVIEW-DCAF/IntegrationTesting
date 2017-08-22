@@ -12,8 +12,9 @@ node('proto'){
         checkout scm
     }
     stage ('Messing with env variables'){
-        def PR = env.CHANGE_ID
-        echo PR
+        echo CHANGE_ID
+        echo JOB_NAME
+        echo JOB_BASE_NAME
     }
     stage ('Git Diff'){
         echo 'Running LabVIEW diff build between origin/master and this commit' 
