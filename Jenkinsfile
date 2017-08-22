@@ -13,7 +13,6 @@ node('proto'){
     }
     stage ('Messing with env variables'){
         echo "Branch name: ${BRANCH_NAME}"
-        echo "CHANGE_ID: ${CHANGE_ID}"
         echo "CHANGE_URL: ${CHANGE_URL}"
     }
     stage ('Git Diff'){
