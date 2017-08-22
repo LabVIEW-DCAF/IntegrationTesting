@@ -11,6 +11,11 @@ node('proto'){
         echo 'Attempting to get source from repo...'
         checkout scm
     }
+    stage ('Messing with env variables'){
+        echo "Branch name: ${BRANCH_NAME}"
+        echo "CHANGE_ID: ${CHANGE_ID}"
+        echo "CHANGE_URL: ${CHANGE_URL}"
+    }
     stage ('Git Diff'){
         echo 'Running LabVIEW diff build between origin/master and this commit' 
         def diffDir = "${WORKSPACE}\\diff_dir"
