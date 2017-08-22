@@ -12,7 +12,7 @@ node('proto'){
         checkout scm
     }
     stage ('Messing with env variables'){
-        echo "CHANGE_URL: ${CHANGE_URL}"
+        echo "CHANGE_ID: ${env.CHANGE_ID}"
     }
     stage ('Git Diff'){
         echo 'Running LabVIEW diff build between origin/master and this commit' 
