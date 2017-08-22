@@ -12,7 +12,6 @@ node('proto'){
         checkout scm
     }
     stage ('Messing with env variables'){
-        echo "Branch name: ${BRANCH_NAME}"
         echo "CHANGE_URL: ${CHANGE_URL}"
     }
     stage ('Git Diff'){
