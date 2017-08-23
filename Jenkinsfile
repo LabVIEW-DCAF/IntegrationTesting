@@ -19,7 +19,7 @@ node('proto'){
     stage ('Git Diff'){
         echo 'Running LabVIEW diff build between origin/master and this commit' 
         def diffDir = "${WORKSPACE}\\diff_dir"
-        bat "rm -r ${diffDir}"
+        bat "rd /s /q ${diffDir}"
         bat "mkdir ${diffDir}"
         bat "git difftool --no-prompt --extcmd=\"'C:\\jenkins-buildsystem\\labview.bat' \$LOCAL \$REMOTE diff_dir\" origin/master HEAD"
         // Silencing echo so as to not print out the token.
