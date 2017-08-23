@@ -17,7 +17,7 @@ node('proto'){
         echo JOB_BASE_NAME
     }
     // If this change is a pull request and the DIFFING_ENABLED variable is set on the jenkins master, diff vis.
-    if (CHANGE_ID && DIFFING_ENABLED) {
+    if (env.CHANGE_ID && env.DIFFING_ENABLED) {
     	stage ('Diff VIs'){
 	        echo 'Running LabVIEW diff build between origin/master and this commit' 
 	        def diffDir = "${WORKSPACE}\\diff_dir"
