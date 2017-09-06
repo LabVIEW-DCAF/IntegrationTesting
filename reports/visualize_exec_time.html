@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="collect_data.js"></script>
+    <script type="text/javascript" src="execution_time_charts.js"></script>
+    <script type="text/javascript" src="utilization_charts.js"></script>
+    <script type="text/javascript">
+    // Explanation of execution.
+
+    // Step 1. Create an object with the parameterized info to grab data for a chart and display it. (The chart info object)
+    // Step 2. Wrap the object in a function call that jenkins can do a call back on.
+    // Step 3. Get the last build, used to determine what data to fetch, and then call back the object created in step 2
+    // Step 4. Send requests for data from each build. Keep track of how many requests have been made. Once all requests are resolved...
+    // Step 5. Draw the chart. Use the information about the chart and the data it contains to draw it.
+    // Important notes - the test name is defined in the test itself, as it outputs data with the name attached.
+
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Call back from chart library being loaded
+    function loadCharts() {
+      getLastBuild(pcChartInfo);
+      getLastBuild(rtExecTime9030ChartInfo);
+      getLastBuild(rtExecTime9068ChartInfo);
+      getLastBuild(rtUtilization9030ChartInfo);
+      getLastBuild(rtUtilization9068ChartInfo);
+    }
+    google.charts.setOnLoadCallback(loadCharts);
+
+    redrawFunctions = [redrawAllExecCharts];
+    function redrawAll() {
+      redrawFunctions.forEach(function (func) {
+        func();
+      })
+    };
+    </script>
+  </head>
+  <body onresize="redrawAll()">
+    <div id="PC_Exec_Test" style="width: *; height: 500px;"></div>
+    <div id="RT_Exec_Test_9030" style="width: *; height: 500px;"></div>
+    <div id="RT_Exec_Test" style="width: *; height: 500px;"></div>
+    <button type="button" id="hideMax">Hide Max</button>
+    <div id="RT_Utilization_9030_CPU" style="width: *; height: 500px;"></div>
+    <div id="RT_Utilization_9030_MEM" style="width: *; height: 500px;"></div>
+    <div id="RT_Utilization_9068_CPU" style="width: *; height: 500px;"></div>
+    <div id="RT_Utilization_9068_MEM" style="width: *; height: 500px;"></div>
+  </body>
+</html>
