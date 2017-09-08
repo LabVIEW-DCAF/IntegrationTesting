@@ -5,28 +5,40 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
+    // Explanation of execution.
+
+    // Step 1. Create an object with the parameterized info to grab data for a chart and display it. (The chart info object)
+    // Step 2. Wrap the object in a function call that jenkins can do a call back on.
+    // Step 3. Get the last build, used to determine what data to fetch, and then call back the object created in step 2
+    // Step 4. Send requests for data from each build. Keep track of how many requests have been made. Once all requests are resolved...
+    // Step 5. Draw the chart. Use the information about the chart and the data it contains to draw it.
+    // Important notes - the test name is defined in the test itself, as it outputs data with the name attached.
+
+
       google.charts.load('current', {'packages':['corechart']});
 
-      var waitingOnRequestsToFinish = 0;
+
       // We want to draw the table after all of the ajax requests have resolved
       // This function is used to trigger the function after the ajax requests have all finished.
-      function drawTrigger(delta) {
+      function drawTrigger(delta, chartInfo) {
         // Yes, global state is bad...
-        waitingOnRequestsToFinish += delta;
-        if (waitingOnRequestsToFinish === 0)
+        chartInfo.outstandingRequests += delta;
+        if (chartInfo.outstandingRequests === 0)
         {
-          drawChart();
+          drawChart(chartInfo);
         }
       }
 
-      function handleAjaxError(request) {
-        // But shouldn't 200 not be an error? Well sort of. Because we are requesting files I wrote, it thinks there's an error because the server sees it as text but the browser was expecting jsonp. This is the workaround!
+      function handleAjaxError(request, chartInfo) {
+        // But shouldn't 200 not be an error? Well sort of. Because we are requesting files I 
+        // wrote, it thinks there's an error because the server sees it as text but the browser 
+        // was expecting jsonp. This is the workaround.
         // It also means that there will be no success calls made if you set your ajax request to that.
         if (request.status != 200) {
             console.log("ERR:");
             console.log(request.status);
         }
-        drawTrigger(-1);
+        drawTrigger(-1, chartInfo);
       }
 
       function isValid(data) {
@@ -34,54 +46,59 @@
                data["build_times"].length === 4;
       }
 
-      var dataForChart = [];
+      var dataForChart = {};
+      function getDataForChart(testName) {
+        return (dataForChart[testName] === undefined) ? [] : dataForChart[testName]
+      }
+
       function jenkinsCallback(data) {
+        // This effectively sets the earlier builds of the pc integration test to use test_name = "PC_Exec_Test"
+        // TODO make it work for "" coming in
+        var testName = (data["test_name"] === undefined) ? "PC_Exec_Test" : data["test_name"];
         // ignore bad data
         if (!isValid(data))
         {
           return;
         }
         rowData = [String(data["build_number"])].concat(data["build_times"]);
-        dataForChart = dataForChart.concat([rowData]);
+        dataForChart[testName] = getDataForChart(testName).concat([rowData]);
       }
 
       // Calls Jenkins to get the data dumped from build
-      function getJenkinsData(build_number) {
-        drawTrigger(1);
+      function getJenkinsData(build_number, chartInfo) {
+        drawTrigger(1, chartInfo);
         $.ajax({
           'global': false,
-          // TODO: branch should be master for final submission
-          // TODO: we should specify the file that's loaded dynamically for easily making new tests
-          'url': `http://vm-dcaf-bld-14:8080/job/Integration/${build_number}/artifact/build_temp/exec_time.json`,
+          'url': chartInfo.CreateUrl(build_number),
           'dataType': "jsonp",
-          'error': function (request) { handleAjaxError(request); },
+          'error': function (request) { handleAjaxError(request, chartInfo); },
 
         });
       }
 
-      function requestJenkinsData(data) {
-        for (i = data.number; i > 0; i--) {
-          getJenkinsData(i);
-        }
+      function createJenkinsDataRequests(chartInfo) {
+        return function (data) {
+          for (i = data.number; i > 0; i--) {
+            getJenkinsData(i, chartInfo);
+          }
+        };
       }
 
-      function getLastBuild() {
-        drawTrigger(1);
-        console.log('a');
+      function getLastBuild(url, chartInfo) {
+        drawTrigger(1, chartInfo);
         $.ajax({
           'global': false,
-          'url': 'http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsData',
+          'url': url,
           'dataType': "jsonp",
-          'error': function (request) { handleAjaxError(request); },
+          'error': function (request) { handleAjaxError(request, chartInfo); },
         });
       }
 
-      function drawChart() {
-        console.log(`Number of waitingOnRequestsToFinish: ${waitingOnRequestsToFinish}`);
-        // TODO: drive the labels from the json to make this code agnostic to the test
+      function drawChart(chartInfo) {
+        console.log(`Number of Outstanding Requests: ${chartInfo.outstandingRequests}`);
         var header = ['Build', 'Max', '99.9 Percentile', '99 Percentile', '95 Percentile']
         var rawData = [header];
-        var sortedData = dataForChart.sort(function(a, b) {
+        var sortedData = getDataForChart(chartInfo.dataKey).sort(function(a, b) {
           return a[0] - b[0];
         });
        
@@ -91,15 +108,7 @@
         console.log(rawData);
         var data = google.visualization.arrayToDataTable(rawData);
 
-        var options = {
-          title: 'PC Loop Iteration Time',
-          legend: { position: 'bottom' },
-          focusTarget: 'category',
-          hAxis: { title: 'Jenkin Build Number' },
-          vAxis: { title: 'Loop Iteration Time (seconds)'},
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        var chart = new google.visualization.LineChart(document.getElementById(chartInfo.dataKey));
 
         // Set the number of digits on our data.
         var formatter = new google.visualization.NumberFormat(
@@ -109,32 +118,69 @@
         formatter.format(data, 2);
         formatter.format(data, 3);
         formatter.format(data, 4);
-        chart.draw(data, options);
+        chart.draw(data, chartInfo);
 
         var hideMax = document.getElementById("hideMax");
+        hideMax[chartInfo.dataKey] = {};
+        hideMax[chartInfo.dataKey]["chart"] = chart;
+        hideMax[chartInfo.dataKey]["data"] = data;
+        hideMax[chartInfo.dataKey]["chartInfo"] = chartInfo;
+        hideMax["dataKeys"] = (hideMax["dataKeys"] === undefined) ? new Set([chartInfo.dataKey]) : hideMax["dataKeys"].add(chartInfo.dataKey);
         var maxIsHidden = false;
         hideMax.onclick = function()
         {
-          view = new google.visualization.DataView(data);
-          if (maxIsHidden) {
-            view.setColumns([0,1,2,3,4]);
-          }
-          else {
-            view.hideColumns([1]);
-          }
+          hideMax["dataKeys"].forEach (function (dataKey) {
+            console.log(`I got called: ${chartInfo.dataKey}`);
+            view = new google.visualization.DataView(hideMax[dataKey]["data"]);
+            if (maxIsHidden) {
+              view.setColumns([0,1,2,3,4]);
+            }
+            else {
+              view.hideColumns([1]);
+            }
+            hideMax[dataKey]["chart"].draw(view, hideMax[dataKey]["chartInfo"]);  
+          })
           maxIsHidden = !maxIsHidden;
-          
-          chart.draw(view, options);
         }
-
       }
 
+      // Clicking the button twice will redraw the charts.
+      function redrawAll() {
+        var button = document.getElementById("hideMax");
+        button.onclick();
+        button.onclick();
+      }
 
-      getLastBuild();
+      var pcChartInfo = {
+        title: 'PC Loop Iteration Time',
+        legend: { position: 'bottom' },
+        focusTarget: 'category',
+        hAxis: { title: 'Jenkins Build Number' },
+        vAxis: { title: 'Loop Iteration Time (seconds)'},
+        dataKey: "PC_Exec_Test",
+        outstandingRequests: 0,
+        CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/Integration/${build_number}/artifact/build_temp/exec_time.json`;},
+      };
+      var requestJenkinsDataPC = createJenkinsDataRequests(pcChartInfo)
+      getLastBuild('http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataPC', pcChartInfo);
+
+      var rtExecTimeChartInfo = {
+        title: 'RT Loop Iteration Time',
+        legend: { position: 'bottom' },
+        focusTarget: 'category',
+        hAxis: { title: 'Jenkins Build Number' },
+        vAxis: { title: 'Loop Iteration Time (seconds)'},
+        dataKey: "RT_Exec_Test",
+        outstandingRequests: 0,
+        CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/${build_number}/artifact/build_temp/rt_exec_time.json`;},
+      };
+      var requestJenkinsDataRT = createJenkinsDataRequests(rtExecTimeChartInfo)
+      getLastBuild('http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataRT', rtExecTimeChartInfo);
     </script>
   </head>
-  <body onresize="drawChart()">
-    <div id="curve_chart" style="width: *; height: 500px;"></div>
+  <body onresize="redrawAll()">
+    <div id="PC_Exec_Test" style="width: *; height: 500px;"></div>
+    <div id="RT_Exec_Test" style="width: *; height: 500px;"></div>
     <button type="button" id="hideMax">Hide Max</button>
   </body>
 </html>
