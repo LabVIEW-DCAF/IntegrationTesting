@@ -8,11 +8,13 @@
 *.so.*
 *.dylib
 
-# Executables
+# Executables and builds
 *.exe
+builds/
 
 # Metadata
 *.aliases
 *.lvlps
 
 !/Style Guidelines/**/*
+*.bin
