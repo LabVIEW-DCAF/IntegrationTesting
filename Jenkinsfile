@@ -3,10 +3,9 @@
 // testName: The name of the test, as defined inside the json report
 // testJsonFile: The filename that the json file with test data will have
 // testTarget: The config target name in the pcfg file that will be run for this test.
-def executionTimeTest(testName, testJsonFile, testTarget) {
+def executionTimeTest(testName, testJsonFile, testTarget, target_ip, targetName) {
 	// Runs a simple DCAF application, logging the execution time for loops running on the device
     def config_file = "RT_Exec_Timing.pcfg"
-    def target_ip = "10.0.70.21"
     def logfile = "logfile.tdms"
     def logfile_path = "/home/lvuser/dcaf/${logfile}"
     def user = "admin"
@@ -15,15 +14,14 @@ def executionTimeTest(testName, testJsonFile, testTarget) {
     // delete log directory
     bat "echo y | plink -pw ${RIO_PASSWORD} ${user}@${target_ip} rm -r -f /home/lvuser/dcaf"
     // Run DCAF
-    bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi ${testTarget} home:\\lvuser\\${config_file} 60 ${target_ip}"
+    bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi ${testTarget} home:\\lvuser\\${config_file} 60 ${target_ip} ${targetName}"
     bat "echo y | pscp -pw ${RIO_PASSWORD} ${user}@${target_ip}:${logfile_path} ${WORKSPACE}\\${logfile}"
     bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\utilities\\Timing Report.vi\" -- \"${WORKSPACE}\" ${logfile} build_temp ${testJsonFile} ${BUILD_NUMBER} ${testName}"
 }
 
-def utilizationTest(testName, testJsonFile, testTarget) {
+def utilizationTest(testName, testJsonFile, testTarget, target_ip, targetName) {
 		// Runs a simple DCAF application, logging the resource utilization of the memory and CPU on the device.
         def config_file = "RT_Exec_Timing.pcfg"
-        def target_ip = "10.0.70.21"
         def logfile = "utilization.tdms"
         def logfile_path = "/home/lvuser/dcaf/utilization.1.tdms"
         def user = "admin"
@@ -32,7 +30,7 @@ def utilizationTest(testName, testJsonFile, testTarget) {
         // delete log directory
         bat "echo y | plink -pw ${RIO_PASSWORD} ${user}@${target_ip} rm -r -f /home/lvuser/dcaf"
         // Run DCAF
-        bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi ${testTarget} home:\\lvuser\\${config_file} 60 ${target_ip}"
+        bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi ${testTarget} home:\\lvuser\\${config_file} 60 ${target_ip} ${targetName}"
         bat "echo y | pscp -pw ${RIO_PASSWORD} ${user}@${target_ip}:${logfile_path} ${WORKSPACE}\\${logfile}"
         bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\utilities\\Utilization Report.vi\" -- \"${WORKSPACE}\" ${logfile} build_temp ${testJsonFile} ${BUILD_NUMBER} ${testName} 500"
 }
@@ -82,7 +80,10 @@ node('2014'){
     // 	executionTimeTest('RT_Exec_Test', 'rt_exec_time.json', '9068')
     // }
     stage ('9068 Utilization'){
-    	utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '9068-Utilization')
+    	utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '9068-Utilization', '10.0.70.21', '9068')
+    }
+    stage ('9038 Utilization'){
+    	utilizationTest('RT_Utilization_9038', 'rt_utilization_9038.json', '9038-Utilization' '10.2.200.34', '9038')
     }
     stage ('HTML Reports'){
         publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, includes: '**/*.html,**/*.js', keepAll: false, reportDir: 'reports', reportFiles: 'visualize_exec_time.html', reportName: 'Execution Trends', reportTitles: 'Execution Trends'])
