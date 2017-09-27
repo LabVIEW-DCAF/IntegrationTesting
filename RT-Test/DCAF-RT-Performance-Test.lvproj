@@ -253,7 +253,7 @@ DirectoryIndex index.htm
 	</Item>
 	<Item Name="9038" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">9038</Property>
-		<Property Name="alias.value" Type="Str">10.2.200.34</Property>
+		<Property Name="alias.value" Type="Str">10.0.70.14</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,x64;DeviceCode,77B9;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">77B9</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
