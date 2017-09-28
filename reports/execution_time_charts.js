@@ -73,17 +73,28 @@ var pcChartInfo = {
   firstTest: 110, // First test where data was available for this chart
   lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataPC',
   CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/Integration/${build_number}/artifact/build_temp/exec_time.json`;},
-  DrawChart: DrawExecTimeChart, 
+  DrawChart: DrawExecTimeChart,
 };
 var requestJenkinsDataPC = createJenkinsDataRequests(pcChartInfo)
 
-var rtExecTimeChartInfo = {
+var rtExecTime9068ChartInfo = {
   title: '9068 RT Loop Iteration Time',
   dataKey: "RT_Exec_Test",
   outstandingRequests: 0,
   firstTest: 155, // First test where data was available for this chart
-  lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataRT',
+  lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataRT9068',
   CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/Integration/${build_number}/artifact/build_temp/rt_exec_time.json`;},
   DrawChart: DrawExecTimeChart,
 };
-var requestJenkinsDataRT = createJenkinsDataRequests(rtExecTimeChartInfo)
+var requestJenkinsDataRT9068 = createJenkinsDataRequests(rtExecTime9068ChartInfo)
+
+var rtExecTime9038ChartInfo = {
+  title: '9038 RT Loop Iteration Time',
+  dataKey: "RT_Exec_Test_9038",
+  outstandingRequests: 0,
+  firstTest: 48, // First test where data was available for this chart
+  lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/report-dcaf-errors/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataRT9038',
+  CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/report-dcaf-errors/${build_number}/artifact/build_temp/rt_exec_time_9038.json`;},
+  DrawChart: DrawExecTimeChart,
+};
+var requestJenkinsDataRT9038 = createJenkinsDataRequests(rtExecTime9038ChartInfo)
