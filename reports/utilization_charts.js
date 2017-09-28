@@ -103,9 +103,9 @@ function DrawMemoryUtilizationChart(chartInfo) {
         },
     };
     chart.draw(data, chart_options);
-  }
+}
 
-  var rtUtilizationChartInfo = {
+var rtUtilization9068ChartInfo = {
     cpu_title: '9068 RT CPU Utilization',
     mem_title: '9068 RT Memory Utilization',
     dataKey:"RT_Utilization_9068",
@@ -116,5 +116,19 @@ function DrawMemoryUtilizationChart(chartInfo) {
     lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/report-dcaf-errors/lastSuccessfulBuild/api/json?jsonp=requestJenkinsData9068Util',
     CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/report-dcaf-errors/${build_number}/artifact/build_temp/rt_utilization_9068.json`;},
     DrawChart: DrawUtilizationCharts,
-  };
-  var requestJenkinsData9068Util = createJenkinsDataRequests(rtUtilizationChartInfo)
+};
+var requestJenkinsData9068Util = createJenkinsDataRequests(rtUtilization9068ChartInfo)
+
+var rtUtilization9038ChartInfo = {
+    cpu_title: '9038 RT CPU Utilization',
+    mem_title: '9038 RT Memory Utilization',
+    dataKey:"RT_Utilization_9038",
+    cpu_id: "RT_Utilization_9038_CPU",
+    mem_id: "RT_Utilization_9038_MEM",
+    outstandingRequests: 0,
+    firstTest: 27, // First test where data was available for this chart
+    lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/report-dcaf-errors/lastSuccessfulBuild/api/json?jsonp=requestJenkinsData9038Util',
+    CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/report-dcaf-errors/${build_number}/artifact/build_temp/rt_utilization_9038.json`;},
+    DrawChart: DrawUtilizationCharts,
+};
+var requestJenkinsData9038Util = createJenkinsDataRequests(rtUtilization9038ChartInfo)

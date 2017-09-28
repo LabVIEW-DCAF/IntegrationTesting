@@ -85,7 +85,7 @@ node('2014'){
     stage ('9068 Utilization'){
      utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '9068-Utilization', '10.0.70.21', '9068')
     }
-    stage ('9038 Utilization'){//                                           rename target is relevant
+    stage ('9038 Utilization'){
         utilizationTest('RT_Utilization_9038', 'rt_utilization_9038.json', '10.0.70.14', '9038')
     }
     stage ('HTML Reports'){
