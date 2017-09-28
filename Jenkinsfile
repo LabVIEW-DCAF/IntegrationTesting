@@ -63,30 +63,46 @@ node('2014'){
     //     utfTest("config file compatibility\\config check.lvproj", "2014")
     // }
     // stage('Windows EXE'){
+    // timeout(time: 20, unit: 'MINUTES'){
     //     lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "My Computer", "", "2014")
     // }
+    // }
     // stage('cRIO ARM EXE'){
+    // timeout(time: 20, unit: 'MINUTES'){
     //     lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9068", "", "2014")
     // }
+    // }
     // stage('cRIO x86 EXE'){
+    // timeout(time: 20, unit: 'MINUTES'){
     //     lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9039", "", "2014")
     // }
-    // stage('Performance Testing'){
+    // }
+    // stage('PC Performance Testing'){
+        // timeout(time: 10, unit: 'MINUTES'){
     //     echo "run performance tests"
     //     bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\PerformanceTesting\\Execute PC Benchmarking.vi\" -- \"${WORKSPACE}\" \"PerformanceTesting\\ExecTiming.pcfg\" \"PC Benchmarking\" 60 logfile.tdms"
     //     bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\utilities\\Timing Report.vi\" -- \"${WORKSPACE}\" logfile.tdms \"build_temp\" \"exec_time.json\" \"${BUILD_NUMBER}\" PC_Exec_Test"
     // }
+    // }
     stage ('9068 Execution Time'){
-        executionTimeTest('RT_Exec_Test', 'rt_exec_time.json', '10.0.70.21', '9068')
+        timeout(time: 10, unit: 'MINUTES'){
+          executionTimeTest('RT_Exec_Test', 'rt_exec_time.json', '10.0.70.21', '9068')
+        }
     }
     stage ('9038 Execution Time'){
+      timeout(time: 10, unit: 'MINUTES'){
         executionTimeTest('RT_Exec_Test_9038', 'rt_exec_time_9038.json', '10.0.70.14', '9038')
+      }
     }
     stage ('9068 Utilization'){
+      timeout(time: 10, unit: 'MINUTES'){
         utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '10.0.70.21', '9068')
+      }
     }
     stage ('9038 Utilization'){
+      timeout(time: 10, unit: 'MINUTES'){
         utilizationTest('RT_Utilization_9038', 'rt_utilization_9038.json', '10.0.70.14', '9038')
+      }
     }
     stage ('HTML Reports'){
         publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, includes: '**/*.html,**/*.js', keepAll: false, reportDir: 'reports', reportFiles: 'visualize_exec_time.html', reportName: 'Execution Trends', reportTitles: 'Execution Trends'])
