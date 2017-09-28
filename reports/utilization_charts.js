@@ -1,6 +1,8 @@
 // Calls both of the utilization charts functions.
 function DrawUtilizationCharts(chartInfo) {
+    redrawFunctions.push(function () { DrawCpuUtilizationChart(chartInfo) });
     DrawCpuUtilizationChart(chartInfo);
+    redrawFunctions.push(function () { DrawMemoryUtilizationChart(chartInfo)});
     DrawMemoryUtilizationChart(chartInfo);
 }
 

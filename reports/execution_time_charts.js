@@ -60,7 +60,7 @@ function DrawExecTimeChart(chartInfo) {
 }
 
 // Clicking the button twice will redraw the charts.
-function redrawAll() {
+function redrawAllExecCharts() {
   var button = document.getElementById("hideMax");
   button.onclick();
   button.onclick();

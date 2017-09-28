@@ -28,6 +28,13 @@
       getLastBuild(rtUtilization9068ChartInfo);
     }
     google.charts.setOnLoadCallback(loadCharts);
+
+    redrawFunctions = [redrawAllExecCharts];
+    function redrawAll() {
+      redrawFunctions.forEach(function (func) {
+        func();
+      })
+    };
     </script>
   </head>
   <body onresize="redrawAll()">
