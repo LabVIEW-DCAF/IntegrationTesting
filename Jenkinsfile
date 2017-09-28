@@ -76,15 +76,15 @@ node('2014'){
     //     bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\PerformanceTesting\\Execute PC Benchmarking.vi\" -- \"${WORKSPACE}\" \"PerformanceTesting\\ExecTiming.pcfg\" \"PC Benchmarking\" 60 logfile.tdms"
     //     bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\utilities\\Timing Report.vi\" -- \"${WORKSPACE}\" logfile.tdms \"build_temp\" \"exec_time.json\" \"${BUILD_NUMBER}\" PC_Exec_Test"
     // }
-    // stage ('9068 Execution Time'){
-    //  executionTimeTest('RT_Exec_Test', 'rt_exec_time.json', '10.0.70.21', '9068')
-    // }
+    stage ('9068 Execution Time'){
+     executionTimeTest('RT_Exec_Test', 'rt_exec_time.json', '10.0.70.21', '9068')
+    }
     stage ('9038 Execution Time'){
      executionTimeTest('RT_Exec_Test_9038', 'rt_exec_time_9038.json', '10.0.70.14', '9038')
     }
-    // stage ('9068 Utilization'){
-    //  utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '9068-Utilization', '10.0.70.21', '9068')
-    // }
+    stage ('9068 Utilization'){
+     utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '9068-Utilization', '10.0.70.21', '9068')
+    }
     stage ('9038 Utilization'){//                                           rename target is relevant
         utilizationTest('RT_Utilization_9038', 'rt_utilization_9038.json', '10.0.70.14', '9038')
     }
