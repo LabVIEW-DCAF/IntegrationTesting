@@ -148,7 +148,7 @@ DirectoryIndex index.htm
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str">cRIO-9036</Property>
 		</Item>
-		<Item Name="RT-Includes.vi" Type="VI" URL="../RT-Includes.vi"/>
+		<Item Name="RT-Includes.vi" Type="VI" URL="../../RT-Cert/tests_auto/performance/Jitter/RT_Certification/Tests/RT-Includes.vi"/>
 		<Item Name="RT-Main.vi" Type="VI" URL="../RT-Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -245,9 +245,6 @@ DirectoryIndex index.htm
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -335,7 +332,7 @@ AddOutputFilter chunkFilter
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str">cRIO-9038</Property>
 		</Item>
-		<Item Name="RT-Includes.vi" Type="VI" URL="../RT-Includes.vi"/>
+		<Item Name="RT-Includes.vi" Type="VI" URL="../../RT-Cert/tests_auto/performance/Jitter/RT_Certification/Tests/RT-Includes.vi"/>
 		<Item Name="RT-Main.vi" Type="VI" URL="../RT-Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -432,9 +429,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
