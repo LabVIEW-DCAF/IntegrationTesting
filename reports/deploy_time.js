@@ -15,38 +15,31 @@ function DrawDeployTimeChart(chartInfo) {
 
   var chart = new google.visualization.LineChart(document.getElementById("Deploy Time"));
 
-  // Set the number of digits on our data.
-  // var formatter = new google.visualization.NumberFormat(
-  //   { fractionDigits: 5 }
-  //   );
-  // formatter.format(data, 1);
-  // formatter.format(data, 2);
-  // formatter.format(data, 3);
-  // formatter.format(data, 4);
   chart_options = {
     title: "Deploy Time",
     legend: { position: 'bottom' },
     focusTarget: 'category',
     hAxis: { title: 'Jenkins Build Number' },
-    vAxis: { title: 'Deploy Time (ms)'},
+    vAxis: { title: 'Deploy Time (seconds)'},
   }
   chart.draw(data, chart_options);
 }
 
-
 deployData = [];
 function handleJenkinsDataDeployTime(data) {
-  stageData = data['stages'].filter(stage => stage['name'] === 'RT Tests').map(stage => ({ target: '9068', duration: stage['durationMillis']}));
+  stageData = data['stages'].filter(stage => stage['name'] === 'RT Tests').map(stage => ({ target: '9068', duration: stage['durationMillis']/1000}));
   newData = {build:data['id'], data:stageData}
-  console.log('Adding Data');
-  console.log(newData);
   deployData = deployData.concat(newData);
 }
 
 function dataToTable() {
-  console.log("Row Chart Data:");
-  console.log(deployData[0]['data'][0]['duration']);
-  return deployData.map(row => [row['build'], row['data'][0]['duration']]);
+  // TODO if I want to do this for different targets, figure out a solution
+  return deployData.filter(removeOutliers).map(row => [row['build'], row['data'][0]['duration']]);
+}
+
+// I don't want show times when it got hung, etc.
+function removeOutliers(row) {
+  return row['data'][0]['duration'] < 6000;
 }
 
 // Calls Jenkins to get the data dumped from build
@@ -73,10 +66,8 @@ function createJenkinsDataRequestsForDeployTime(chartInfo) {
 }
 
 var deployTimeChartInfo = {
-  title: 'deployTime Time', // is this needed?
-  dataKey: "RT_Exec_Test_9030", // is this needed?
   outstandingRequests: 0,
-  firstTest: 165, // First test where data was available for this chart
+  firstTest: 163, // First test where data was available for this chart
   lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataDeployTime',
   CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/Integration/${build_number}/wfapi/describe`;},
   DrawChart: DrawDeployTimeChart,
