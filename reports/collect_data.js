@@ -20,30 +20,21 @@ function handleAjaxError(request, chartInfo) {
   drawTrigger(-1, chartInfo);
 }
 
-function isValid(data) {
-  return typeof data["build_number"] === 'number' &&
-         data["build_times"].length === 4;
-}
-
 var dataForChart = {};
 function getDataForChart(testName) {
   return (dataForChart[testName] === undefined) ? [] : dataForChart[testName]
 }
 
 function jenkinsCallback(data) {
-  // This effectively sets the earlier builds of the pc integration test to use test_name = "PC_Exec_Test"
+  // This effectively   sets the earlier builds of the pc integration test to use test_name = "PC_Exec_Test"
   var testName = (data["test_name"] === undefined) ? "PC_Exec_Test" : data["test_name"];
-  // ignore bad data - Do I get bad data?
-  // if (!isValid(data))
-  // {
-  //   return;
-  // }
   dataForChart[testName] = getDataForChart(testName).concat(data);
 }
 
 // Calls Jenkins to get the data dumped from build
 function getJenkinsData(build_number, chartInfo) {
   drawTrigger(1, chartInfo);
+  console.log('requesting data');
   $.ajax({
     'global': false,
     'url': chartInfo.CreateUrl(build_number),
