@@ -23,11 +23,11 @@
     // Call back from chart library being loaded
     function loadCharts() {
       getLastBuild(deployTimeChartInfo);
-      // getLastBuild(pcChartInfo);
-      // getLastBuild(rtExecTime9030ChartInfo);
-      // getLastBuild(rtExecTime9068ChartInfo);
-      // getLastBuild(rtUtilization9030ChartInfo);
-      // getLastBuild(rtUtilization9068ChartInfo);
+      getLastBuild(pcChartInfo);
+      getLastBuild(rtExecTime9030ChartInfo);
+      getLastBuild(rtExecTime9068ChartInfo);
+      getLastBuild(rtUtilization9030ChartInfo);
+      getLastBuild(rtUtilization9068ChartInfo);
     }
     google.charts.setOnLoadCallback(loadCharts);
 
