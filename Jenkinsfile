@@ -93,7 +93,9 @@ node('2014'){
     //     }
     // }
     stage('Deploy Test'){
+	    timeout(time: 20, unit: 'MINUTES'){
     	    bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi ExecutionTime home:\\lvuser\\RT_Deploy.pcfg 60 10.0.70.21 9068"
+    	}
     }
     // stage ('9068 Execution Time'){
     //     timeout(time: 10, unit: 'MINUTES'){
