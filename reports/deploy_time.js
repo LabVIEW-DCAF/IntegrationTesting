@@ -27,7 +27,7 @@ function DrawDeployTimeChart(chartInfo) {
 
 deployData = [];
 function handleJenkinsDataDeployTime(data) {
-  stageData = data['stages'].filter(stage => stage['name'] === 'RT Tests').map(stage => ({ target: '9068', duration: stage['durationMillis']/1000}));
+  stageData = data['stages'].filter(stage => stage['name'] === 'Deploy Test').map(stage => ({ target: '9068', duration: stage['durationMillis']/1000}));
   newData = {build:data['id'], data:stageData}
   deployData = deployData.concat(newData);
 }

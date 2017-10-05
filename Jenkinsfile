@@ -47,71 +47,74 @@ node('2014'){
     stage ('Pre-Clean'){
         preClean()
     }
-    stage ('Update Packages'){
-        echo 'Updating all installed packages to latest version on internal repo'
-        vipmUpdate("2014")
-    }
+    // stage ('Update Packages'){
+    //     echo 'Updating all installed packages to latest version on internal repo'
+    //     vipmUpdate("2014")
+    // }
     stage ('SCM_Checkout'){
         echo 'Attempting to get source from repo...'
         checkout scm
     }
-    // If this change is a pull request and the DIFFING_PIC_REPO variable is set on the jenkins master, diff vis.
-    if (env.CHANGE_ID && env.DIFFING_PIC_REPO) {
-        stage ('Diff VIs'){
-            lvDiff("2014")
-        }
+    // // If this change is a pull request and the DIFFING_PIC_REPO variable is set on the jenkins master, diff vis.
+    // if (env.CHANGE_ID && env.DIFFING_PIC_REPO) {
+    //     stage ('Diff VIs'){
+    //         lvDiff("2014")
+    //     }
+    // }
+    // stage ('Temp Directories'){
+    //     bat 'mkdir build_temp'
+    // }
+    // stage('Config File Check'){
+    //     utfTest("config file compatibility\\config check.lvproj", "2014")
+    // }
+    // stage('Windows EXE'){
+    //     timeout(time: 20, unit: 'MINUTES'){
+    //         lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "My Computer", "", "2014")
+    //     }
+    // }
+    // stage('cRIO ARM EXE'){
+    //     timeout(time: 20, unit: 'MINUTES'){
+    //         lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9068", "", "2014")
+    //     }
+    // }
+    // stage('cRIO x86 EXE'){
+    //     timeout(time: 20, unit: 'MINUTES'){
+    //         lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9039", "", "2014")
+    //     }
+    // }
+    // stage('Utilities Unit Tests'){
+    //     utfTest("utilities\\UtilitiesTests.lvproj", "2014")
+    // }
+    // stage('PC Performance Testing'){
+    //     timeout(time: 10, unit: 'MINUTES'){
+    //         echo "run performance tests"
+    //         bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\PerformanceTesting\\Execute PC Benchmarking.vi\" -- \"${WORKSPACE}\" \"PerformanceTesting\\ExecTiming.pcfg\" \"PC Benchmarking\" 60 logfile.tdms"
+    //         bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\utilities\\Timing Report.vi\" -- \"${WORKSPACE}\" logfile.tdms \"build_temp\" \"exec_time.json\" \"${BUILD_NUMBER}\" PC_Exec_Test"
+    //     }
+    // }
+    stage('Deploy Test'){
+    	    bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi ExecutionTime home:\\lvuser\\RT_Deploy.pcfg 60 10.0.70.21 9068"
     }
-    stage ('Temp Directories'){
-        bat 'mkdir build_temp'
-    }
-    stage('Config File Check'){
-        utfTest("config file compatibility\\config check.lvproj", "2014")
-    }
-    stage('Windows EXE'){
-        timeout(time: 20, unit: 'MINUTES'){
-            lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "My Computer", "", "2014")
-        }
-    }
-    stage('cRIO ARM EXE'){
-        timeout(time: 20, unit: 'MINUTES'){
-            lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9068", "", "2014")
-        }
-    }
-    stage('cRIO x86 EXE'){
-        timeout(time: 20, unit: 'MINUTES'){
-            lvBuild("Automated Builds Project\\All Module Integration Test.lvproj", "cRIO9039", "", "2014")
-        }
-    }
-    stage('Utilities Unit Tests'){
-        utfTest("utilities\\UtilitiesTests.lvproj", "2014")
-    }
-    stage('PC Performance Testing'){
-        timeout(time: 10, unit: 'MINUTES'){
-            echo "run performance tests"
-            bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\PerformanceTesting\\Execute PC Benchmarking.vi\" -- \"${WORKSPACE}\" \"PerformanceTesting\\ExecTiming.pcfg\" \"PC Benchmarking\" 60 logfile.tdms"
-            bat "labview-cli --kill --lv-ver 2014 \"${WORKSPACE}\\utilities\\Timing Report.vi\" -- \"${WORKSPACE}\" logfile.tdms \"build_temp\" \"exec_time.json\" \"${BUILD_NUMBER}\" PC_Exec_Test"
-        }
-    }
-    stage ('9068 Execution Time'){
-        timeout(time: 10, unit: 'MINUTES'){
-          executionTimeTest('RT_Exec_Test', 'rt_exec_time.json', '10.0.18.181', '9068')
-        }
-    }
-    stage ('9030 Execution Time'){
-      timeout(time: 10, unit: 'MINUTES'){
-        executionTimeTest('RT_Exec_Test_9030', 'rt_exec_time_9030.json', '10.1.129.126', '9030')
-      }
-    }
-    stage ('9068 Utilization'){
-      timeout(time: 10, unit: 'MINUTES'){
-        utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '10.0.18.181', '9068')
-      }
-    }
-    stage ('9030 Utilization'){
-      timeout(time: 10, unit: 'MINUTES'){
-        utilizationTest('RT_Utilization_9030', 'rt_utilization_9030.json', '10.1.129.126', '9030')
-      }
-    }
+    // stage ('9068 Execution Time'){
+    //     timeout(time: 10, unit: 'MINUTES'){
+    //       executionTimeTest('RT_Exec_Test', 'rt_exec_time.json', '10.0.18.181', '9068')
+    //     }
+    // }
+    // stage ('9030 Execution Time'){
+    //   timeout(time: 10, unit: 'MINUTES'){
+    //     executionTimeTest('RT_Exec_Test_9030', 'rt_exec_time_9030.json', '10.1.129.126', '9030')
+    //   }
+    // }
+    // stage ('9068 Utilization'){
+    //   timeout(time: 10, unit: 'MINUTES'){
+    //     utilizationTest('RT_Utilization_9068', 'rt_utilization_9068.json', '10.0.18.181', '9068')
+    //   }
+    // }
+    // stage ('9030 Utilization'){
+    //   timeout(time: 10, unit: 'MINUTES'){
+    //     utilizationTest('RT_Utilization_9030', 'rt_utilization_9030.json', '10.1.129.126', '9030')
+    //   }
+    // }
     stage ('HTML Reports'){
         publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, includes: '**/*.html,**/*.js', keepAll: false, reportDir: 'reports', reportFiles: 'visualize_exec_time.html', reportName: 'Execution Trends', reportTitles: 'Execution Trends'])
     }
