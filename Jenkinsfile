@@ -93,9 +93,10 @@ node('2014'){
     //     }
     // }
     stage('Deploy Test'){
-	    timeout(time: 20, unit: 'MINUTES'){
-    	    bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi ExecutionTime home:\\lvuser\\RT_Deploy.pcfg 60 10.0.70.21 9068"
-    	}
+        timeout(time: 20, unit: 'MINUTES'){
+            bat "echo y | pscp -pw  ${RIO_PASSWORD} ${WORKSPACE}\\RT-Test\\RT_Deploy.pcfg admin@10.0.70.21:/home/lvuser/RT_Deploy.pcfg"
+            bat "labview-cli --kill --lv-ver 2014 ${WORKSPACE}\\RT-Test\\Execute-RT-Benchmarking.vi -- ${WORKSPACE} RT-Test\\DCAF-RT-Performance-Test.lvproj RT-Main.vi cRIO home:\\lvuser\\RT_Deploy.pcfg 60 10.0.70.21 9068"
+        }
     }
     // stage ('9068 Execution Time'){
     //     timeout(time: 10, unit: 'MINUTES'){
