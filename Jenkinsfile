@@ -61,9 +61,9 @@ node('2014'){
     //         lvDiff("2014")
     //     }
     // }
-    // stage ('Temp Directories'){
-    //     bat 'mkdir build_temp'
-    // }
+    stage ('Temp Directories'){
+        bat 'mkdir build_temp'
+    }
     // stage('Config File Check'){
     //     utfTest("config file compatibility\\config check.lvproj", "2014")
     // }
