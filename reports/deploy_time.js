@@ -25,21 +25,21 @@ function DrawDeployTimeChart(chartInfo) {
   chart.draw(data, chart_options);
 }
 
-deployData = [];
-function handleJenkinsDataDeployTime(data) {
-  stageData = data['stages'].filter(stage => stage['name'] === 'Deploy Test').map(stage => ({ target: '9068', duration: stage['durationMillis']/1000}));
-  newData = {build:data['id'], data:stageData}
-  deployData = deployData.concat(newData);
-}
+// deployData = [];
+// function handleJenkinsDataDeployTime(data) {
+//   stageData = data['stages'].filter(stage => stage['name'] === 'Deploy Test').map(stage => ({ target: '9068', duration: stage['durationMillis']/1000}));
+//   newData = {build:data['id'], data:stageData}
+//   deployData = deployData.concat(newData);
+// }
 
 function dataToTable() {
   var deployData =  getDataForChart('deploy_test');
-  return deployData.filter(!isOutlier).map(row => [row['build_number'], row['time_to_deploy_run']]);
+  return deployData.filter(row => !(isOutlier(row))).map(row => [row['build_number'], row['time_to_deploy_run']/1000]);
 }
 
 // I don't want show times when it got hung, etc.
 function isOutlier(row) {
-  return row['data'][0]['duration'] > 6000;
+  return row['time_to_deploy_run']/1000 > 6000;
 }
 
 // // Calls Jenkins to get the data dumped from build
