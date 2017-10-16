@@ -25,13 +25,6 @@ function DrawDeployTimeChart(chartInfo) {
   chart.draw(data, chart_options);
 }
 
-// deployData = [];
-// function handleJenkinsDataDeployTime(data) {
-//   stageData = data['stages'].filter(stage => stage['name'] === 'Deploy Test').map(stage => ({ target: '9068', duration: stage['durationMillis']/1000}));
-//   newData = {build:data['id'], data:stageData}
-//   deployData = deployData.concat(newData);
-// }
-
 function dataToTable() {
   var deployData =  getDataForChart('deploy_test');
   return deployData.filter(row => !(isOutlier(row))).map(row => [row['build_number'], row['time_to_deploy_run']/1000]);
@@ -41,29 +34,6 @@ function dataToTable() {
 function isOutlier(row) {
   return row['time_to_deploy_run']/1000 > 6000;
 }
-
-// // Calls Jenkins to get the data dumped from build
-// function getJenkinsDataDeployTime(build_number, chartInfo) {
-//   drawTrigger(1, chartInfo);
-//   $.ajax({
-//     'global': false,
-//     'url': chartInfo.CreateUrl(build_number),
-//     'dataType': "json",
-//     'success': function(data) {
-//       handleJenkinsDataDeployTime(data),
-//       drawTrigger(-1, chartInfo);
-//     },
-//     'error': function (request) { handleAjaxError(request, chartInfo); },
-//   });
-// }
-
-// function createJenkinsDataRequestsForDeployTime(chartInfo) {
-//   return function (data) {
-//     for (i = data.number; i > chartInfo.firstTest - 1; i--) {
-//       getJenkinsDataDeployTime(i, chartInfo);
-//     }
-//   };
-// }
 
 var deployTimeChartInfo = {
   outstandingRequests: 0,
