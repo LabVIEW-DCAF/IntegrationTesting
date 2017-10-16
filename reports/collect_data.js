@@ -34,7 +34,6 @@ function jenkinsCallback(data) {
 // Calls Jenkins to get the data dumped from build
 function getJenkinsData(build_number, chartInfo) {
   drawTrigger(1, chartInfo);
-  console.log('requesting data');
   $.ajax({
     'global': false,
     'url': chartInfo.CreateUrl(build_number),

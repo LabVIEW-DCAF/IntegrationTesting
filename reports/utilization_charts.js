@@ -26,7 +26,7 @@ function DrawCpuUtilizationChart(chartInfo) {
     });
     sortedData.forEach(function(item) { rawData = rawData.concat([item]); });
 
-    console.log("Raw Chart Data:");
+    console.log("CPU Raw Chart Data:");
     console.log(rawData);
     var data = google.visualization.arrayToDataTable(rawData);
 
@@ -70,7 +70,7 @@ function DrawMemoryUtilizationChart(chartInfo) {
     });
     sortedData.forEach(function(item) { rawData = rawData.concat([item]); });
 
-    console.log("Raw Chart Data:");
+    console.log("Memory Raw Chart Data:");
     console.log(rawData);
     var data = google.visualization.arrayToDataTable(rawData);
 

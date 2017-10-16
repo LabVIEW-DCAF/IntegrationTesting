@@ -13,7 +13,7 @@ function DrawExecTimeChart(chartInfo) {
   });
   sortedData.forEach(function(item) { rawData = rawData.concat([item]); });
 
-  console.log("Raw Chart Data:");
+  console.log("Exec Time Raw Chart Data:");
   console.log(rawData);
   var data = google.visualization.arrayToDataTable(rawData);
 

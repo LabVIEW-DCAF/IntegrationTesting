@@ -20,6 +20,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="deploy time report.vi" Type="VI" URL="../../utilities/deploy time report.vi"/>
 		<Item Name="Execute-RT-Benchmarking.vi" Type="VI" URL="../Execute-RT-Benchmarking.vi"/>
 		<Item Name="Invoke RT VI.vi" Type="VI" URL="../Invoke RT VI.vi"/>
 		<Item Name="Run RT VI in project.vi" Type="VI" URL="../Run RT VI in project.vi"/>

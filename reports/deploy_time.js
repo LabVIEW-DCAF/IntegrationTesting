@@ -9,7 +9,7 @@ function DrawDeployTimeChart(chartInfo) {
   });
   sortedData.forEach(function(item) { rawData = rawData.concat([item]); });
 
-  console.log("Raw Chart Data:");
+  console.log("Deploy Time Raw Chart Data:");
   console.log(rawData);
   var data = google.visualization.arrayToDataTable(rawData);
 
@@ -33,43 +33,43 @@ function handleJenkinsDataDeployTime(data) {
 }
 
 function dataToTable() {
-  // TODO if I want to do this for different targets, figure out a solution
-  return deployData.filter(removeOutliers).map(row => [row['build'], row['data'][0]['duration']]);
+  var deployData =  getDataForChart('deploy_test');
+  return deployData.filter(!isOutlier).map(row => [row['build_number'], row['time_to_deploy_run']]);
 }
 
 // I don't want show times when it got hung, etc.
-function removeOutliers(row) {
-  return row['data'][0]['duration'] < 6000;
+function isOutlier(row) {
+  return row['data'][0]['duration'] > 6000;
 }
 
-// Calls Jenkins to get the data dumped from build
-function getJenkinsDataDeployTime(build_number, chartInfo) {
-  drawTrigger(1, chartInfo);
-  $.ajax({
-    'global': false,
-    'url': chartInfo.CreateUrl(build_number),
-    'dataType': "json",
-    'success': function(data) {
-      handleJenkinsDataDeployTime(data),
-      drawTrigger(-1, chartInfo);
-    },
-    'error': function (request) { handleAjaxError(request, chartInfo); },
-  });
-}
+// // Calls Jenkins to get the data dumped from build
+// function getJenkinsDataDeployTime(build_number, chartInfo) {
+//   drawTrigger(1, chartInfo);
+//   $.ajax({
+//     'global': false,
+//     'url': chartInfo.CreateUrl(build_number),
+//     'dataType': "json",
+//     'success': function(data) {
+//       handleJenkinsDataDeployTime(data),
+//       drawTrigger(-1, chartInfo);
+//     },
+//     'error': function (request) { handleAjaxError(request, chartInfo); },
+//   });
+// }
 
-function createJenkinsDataRequestsForDeployTime(chartInfo) {
-  return function (data) {
-    for (i = data.number; i > chartInfo.firstTest - 1; i--) {
-      getJenkinsDataDeployTime(i, chartInfo);
-    }
-  };
-}
+// function createJenkinsDataRequestsForDeployTime(chartInfo) {
+//   return function (data) {
+//     for (i = data.number; i > chartInfo.firstTest - 1; i--) {
+//       getJenkinsDataDeployTime(i, chartInfo);
+//     }
+//   };
+// }
 
 var deployTimeChartInfo = {
   outstandingRequests: 0,
-  firstTest: 163, // First test where data was available for this chart
-  lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/Integration/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataDeployTime',
-  CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/Integration/${build_number}/wfapi/describe`;},
+  firstTest: 11, // First test where data was available for this chart
+  lastBuildUrl: 'http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/deploy-time/lastSuccessfulBuild/api/json?jsonp=requestJenkinsDataDeployTime',
+  CreateUrl: function (build_number) {return `http://vm-dcaf-bld-14:8080/job/LabVIEW-DCAF/job/IntegrationTesting/job/deploy-time/${build_number}/artifact/build_temp/deploy_test.json`;},
   DrawChart: DrawDeployTimeChart,
 };
-var requestJenkinsDataDeployTime = createJenkinsDataRequestsForDeployTime(deployTimeChartInfo);
+var requestJenkinsDataDeployTime = createJenkinsDataRequests(deployTimeChartInfo);
