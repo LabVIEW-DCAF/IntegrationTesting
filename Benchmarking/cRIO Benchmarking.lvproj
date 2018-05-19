@@ -1,52 +1,52 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="13008000">
+<Project Type="Project" LVVersion="18008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
-	<Property Name="varPersistentID:{05102336-4CE6-42EF-A58E-8ECD6EB7292C}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO7</Property>
-	<Property Name="varPersistentID:{06DC021F-B00E-4BF3-A404-66824E611931}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO7</Property>
-	<Property Name="varPersistentID:{09F50644-7E75-4E7E-8AFC-75B7662C1028}" Type="Ref">/RT CompactRIO Target/Chassis/Mod3/DI0</Property>
-	<Property Name="varPersistentID:{0A63471F-DD6F-48D7-9EB4-424B933234FE}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO2</Property>
-	<Property Name="varPersistentID:{0C3D7023-4A0C-421F-BD20-B8C2F03EC990}" Type="Ref">/RT CompactRIO Target/Chassis/Mod8/AI3</Property>
-	<Property Name="varPersistentID:{0E50C064-BE09-40AB-9CDF-7ABF91778208}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI7</Property>
-	<Property Name="varPersistentID:{1B068E31-C71D-4266-9141-99EF10BE1CBB}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO6</Property>
-	<Property Name="varPersistentID:{1D825131-9DE9-46C9-9E4D-1CF048ED7162}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO4</Property>
-	<Property Name="varPersistentID:{1EDC31BF-0DC0-4815-9619-2506F481EB60}" Type="Ref">/RT CompactRIO Target/Chassis/Mod3/DI5</Property>
-	<Property Name="varPersistentID:{2994D2B3-06E2-4A0D-A547-2424B5085530}" Type="Ref">/RT CompactRIO Target/Chassis/Mod3/DI1</Property>
-	<Property Name="varPersistentID:{2C33EB71-E8E6-40DB-8DB5-6E8C0680FFA7}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI2</Property>
-	<Property Name="varPersistentID:{2E5EEB92-69A0-4D10-84CE-C7AE4E77EA58}" Type="Ref">/RT CompactRIO Target/Chassis/Mod7/AI2</Property>
-	<Property Name="varPersistentID:{33681B7A-D800-44F8-BE26-2A7194F8B0F5}" Type="Ref">/RT CompactRIO Target/Chassis/Mod6/CH2</Property>
-	<Property Name="varPersistentID:{3A8759B2-2BEA-48BA-9F83-65742C3DBD18}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO2</Property>
-	<Property Name="varPersistentID:{41E74AD0-26CE-4A09-BE15-FF7ECC0E4A22}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/DIO0</Property>
-	<Property Name="varPersistentID:{443DAD8E-E20D-46FA-B524-36D5CCE51A36}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO0</Property>
-	<Property Name="varPersistentID:{452CDCAF-2DAF-4377-A354-9F36AB308EA4}" Type="Ref">/RT CompactRIO Target/Chassis/Mod7/AI1</Property>
-	<Property Name="varPersistentID:{47AD042B-ED7A-4E93-9C6A-F70A180C5D3B}" Type="Ref">/RT CompactRIO Target/Chassis/Mod7/AI0</Property>
-	<Property Name="varPersistentID:{4A45B962-426B-49B0-8CD9-030F112B906C}" Type="Ref">/RT CompactRIO Target/Chassis/Mod8/AI0</Property>
-	<Property Name="varPersistentID:{4F933442-E622-47EB-B24F-B1CC86DF4B3E}" Type="Ref">/RT CompactRIO Target/Chassis/Mod6/CH1</Property>
-	<Property Name="varPersistentID:{669E9A84-5685-40D0-9135-2420144B237D}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI4</Property>
-	<Property Name="varPersistentID:{698B3C7B-7791-4CAF-8460-AAE255A5C309}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/DIO3</Property>
-	<Property Name="varPersistentID:{6DD5013D-3B5A-49FE-9389-5563C991902F}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO1</Property>
-	<Property Name="varPersistentID:{6FA8FFC9-C98F-43CE-B446-173D31FBC39F}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI3</Property>
-	<Property Name="varPersistentID:{71BE5F67-3206-4101-AC65-E914775FB713}" Type="Ref">/RT CompactRIO Target/Chassis/Mod3/DI4</Property>
-	<Property Name="varPersistentID:{8637EA3A-4386-4E4C-B99E-A0AC84F6EE32}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI5</Property>
-	<Property Name="varPersistentID:{8794E825-B6F8-403B-A073-554FD2B84D9A}" Type="Ref">/RT CompactRIO Target/Chassis/Mod8/AI2</Property>
-	<Property Name="varPersistentID:{A195DE4D-BC16-45D1-BE10-BCB5DF857DB8}" Type="Ref">/RT CompactRIO Target/Chassis/Mod3/DI2</Property>
-	<Property Name="varPersistentID:{A98812E1-7ED1-41AC-A77E-135174E6DDD0}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/DIO1</Property>
-	<Property Name="varPersistentID:{AC847F4C-97CA-4C88-B777-4D53A1F2EC60}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI6</Property>
-	<Property Name="varPersistentID:{B1EB9426-DF3D-4045-9CD0-56EF49EAE24A}" Type="Ref">/RT CompactRIO Target/Chassis/Mod6/CH0</Property>
-	<Property Name="varPersistentID:{B9CF7BAF-3ABB-4282-ABAE-2B67A5012AB1}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/DIO2</Property>
-	<Property Name="varPersistentID:{BC694EE3-FEE0-4BCE-A10B-A45933E18BF4}" Type="Ref">/RT CompactRIO Target/Chassis/Mod3/DI3</Property>
-	<Property Name="varPersistentID:{C03EA2CE-1733-4802-B0CD-A60E3590252C}" Type="Ref">/RT CompactRIO Target/Chassis/Mod8/AI1</Property>
-	<Property Name="varPersistentID:{C143CF2A-98F6-42A8-A596-2269DD5972C8}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO6</Property>
-	<Property Name="varPersistentID:{C8B36A2A-AF92-4ED8-BCD1-D3D6541F1B3B}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI0</Property>
-	<Property Name="varPersistentID:{D21368E4-5EE6-4FF0-AAFE-3A08A8E3CC06}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO0</Property>
-	<Property Name="varPersistentID:{D3E4749C-5777-4824-821E-46CF21012C8A}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO5</Property>
-	<Property Name="varPersistentID:{D702D293-57AD-40DD-ADBB-ABC39D84897E}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO3</Property>
-	<Property Name="varPersistentID:{D72AD850-20B6-4545-B953-086AB3F8982D}" Type="Ref">/RT CompactRIO Target/Chassis/Mod6/CH3</Property>
-	<Property Name="varPersistentID:{EC8E4935-E4BE-4E2D-B858-101026FD49DD}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO5</Property>
-	<Property Name="varPersistentID:{F1928232-D282-4C35-AD38-C38CA60F4D98}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO3</Property>
-	<Property Name="varPersistentID:{FAF4C70A-D2F6-43E7-9031-669B80B7E2B9}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AO4</Property>
-	<Property Name="varPersistentID:{FB305DFC-ABC5-426C-A5C3-576802550A9D}" Type="Ref">/RT CompactRIO Target/Chassis/Mod4/AI1</Property>
-	<Property Name="varPersistentID:{FF0A3325-3B86-4FBA-9D1A-2D757764E44A}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DIO1</Property>
+	<Property Name="varPersistentID:{05102336-4CE6-42EF-A58E-8ECD6EB7292C}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO7</Property>
+	<Property Name="varPersistentID:{06DC021F-B00E-4BF3-A404-66824E611931}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO7</Property>
+	<Property Name="varPersistentID:{09F50644-7E75-4E7E-8AFC-75B7662C1028}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod3/DI0</Property>
+	<Property Name="varPersistentID:{0A63471F-DD6F-48D7-9EB4-424B933234FE}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO2</Property>
+	<Property Name="varPersistentID:{0C3D7023-4A0C-421F-BD20-B8C2F03EC990}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod8/AI3</Property>
+	<Property Name="varPersistentID:{0E50C064-BE09-40AB-9CDF-7ABF91778208}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI7</Property>
+	<Property Name="varPersistentID:{1B068E31-C71D-4266-9141-99EF10BE1CBB}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO6</Property>
+	<Property Name="varPersistentID:{1D825131-9DE9-46C9-9E4D-1CF048ED7162}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO4</Property>
+	<Property Name="varPersistentID:{1EDC31BF-0DC0-4815-9619-2506F481EB60}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod3/DI5</Property>
+	<Property Name="varPersistentID:{2994D2B3-06E2-4A0D-A547-2424B5085530}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod3/DI1</Property>
+	<Property Name="varPersistentID:{2C33EB71-E8E6-40DB-8DB5-6E8C0680FFA7}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI2</Property>
+	<Property Name="varPersistentID:{2E5EEB92-69A0-4D10-84CE-C7AE4E77EA58}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod7/AI2</Property>
+	<Property Name="varPersistentID:{33681B7A-D800-44F8-BE26-2A7194F8B0F5}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod6/CH2</Property>
+	<Property Name="varPersistentID:{3A8759B2-2BEA-48BA-9F83-65742C3DBD18}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO2</Property>
+	<Property Name="varPersistentID:{41E74AD0-26CE-4A09-BE15-FF7ECC0E4A22}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/DIO0</Property>
+	<Property Name="varPersistentID:{443DAD8E-E20D-46FA-B524-36D5CCE51A36}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO0</Property>
+	<Property Name="varPersistentID:{452CDCAF-2DAF-4377-A354-9F36AB308EA4}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod7/AI1</Property>
+	<Property Name="varPersistentID:{47AD042B-ED7A-4E93-9C6A-F70A180C5D3B}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod7/AI0</Property>
+	<Property Name="varPersistentID:{4A45B962-426B-49B0-8CD9-030F112B906C}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod8/AI0</Property>
+	<Property Name="varPersistentID:{4F933442-E622-47EB-B24F-B1CC86DF4B3E}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod6/CH1</Property>
+	<Property Name="varPersistentID:{669E9A84-5685-40D0-9135-2420144B237D}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI4</Property>
+	<Property Name="varPersistentID:{698B3C7B-7791-4CAF-8460-AAE255A5C309}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/DIO3</Property>
+	<Property Name="varPersistentID:{6DD5013D-3B5A-49FE-9389-5563C991902F}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO1</Property>
+	<Property Name="varPersistentID:{6FA8FFC9-C98F-43CE-B446-173D31FBC39F}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI3</Property>
+	<Property Name="varPersistentID:{71BE5F67-3206-4101-AC65-E914775FB713}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod3/DI4</Property>
+	<Property Name="varPersistentID:{8637EA3A-4386-4E4C-B99E-A0AC84F6EE32}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI5</Property>
+	<Property Name="varPersistentID:{8794E825-B6F8-403B-A073-554FD2B84D9A}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod8/AI2</Property>
+	<Property Name="varPersistentID:{A195DE4D-BC16-45D1-BE10-BCB5DF857DB8}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod3/DI2</Property>
+	<Property Name="varPersistentID:{A98812E1-7ED1-41AC-A77E-135174E6DDD0}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/DIO1</Property>
+	<Property Name="varPersistentID:{AC847F4C-97CA-4C88-B777-4D53A1F2EC60}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI6</Property>
+	<Property Name="varPersistentID:{B1EB9426-DF3D-4045-9CD0-56EF49EAE24A}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod6/CH0</Property>
+	<Property Name="varPersistentID:{B9CF7BAF-3ABB-4282-ABAE-2B67A5012AB1}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/DIO2</Property>
+	<Property Name="varPersistentID:{BC694EE3-FEE0-4BCE-A10B-A45933E18BF4}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod3/DI3</Property>
+	<Property Name="varPersistentID:{C03EA2CE-1733-4802-B0CD-A60E3590252C}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod8/AI1</Property>
+	<Property Name="varPersistentID:{C143CF2A-98F6-42A8-A596-2269DD5972C8}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO6</Property>
+	<Property Name="varPersistentID:{C8B36A2A-AF92-4ED8-BCD1-D3D6541F1B3B}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI0</Property>
+	<Property Name="varPersistentID:{D21368E4-5EE6-4FF0-AAFE-3A08A8E3CC06}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO0</Property>
+	<Property Name="varPersistentID:{D3E4749C-5777-4824-821E-46CF21012C8A}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO5</Property>
+	<Property Name="varPersistentID:{D702D293-57AD-40DD-ADBB-ABC39D84897E}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO3</Property>
+	<Property Name="varPersistentID:{D72AD850-20B6-4545-B953-086AB3F8982D}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod6/CH3</Property>
+	<Property Name="varPersistentID:{EC8E4935-E4BE-4E2D-B858-101026FD49DD}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO5</Property>
+	<Property Name="varPersistentID:{F1928232-D282-4C35-AD38-C38CA60F4D98}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO3</Property>
+	<Property Name="varPersistentID:{FAF4C70A-D2F6-43E7-9031-669B80B7E2B9}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AO4</Property>
+	<Property Name="varPersistentID:{FB305DFC-ABC5-426C-A5C3-576802550A9D}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod4/AI1</Property>
+	<Property Name="varPersistentID:{FF0A3325-3B86-4FBA-9D1A-2D757764E44A}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DIO1</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -88,7 +88,7 @@
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
@@ -103,6 +103,7 @@
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="main engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/main engine/main engine.lvlib"/>
 				<Item Name="ms timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/standard timing source/ms timing source.lvclass"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
@@ -150,8 +151,6 @@
 				<Item Name="worker pool.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/worker library/worker pool.lvlib"/>
 				<Item Name="write syslog.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Syslog Wrapper - Linux/write syslog.vi"/>
 			</Item>
-			<Item Name="nirviCommon.vi" Type="VI" URL="/&lt;vilib&gt;/express/rvi/timingcommon/nirviCommon.vi"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -242,753 +241,802 @@ DirectoryIndex index.htm
 			<Property Name="crio.ProgrammingMode" Type="Str">express</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str">cRIO-9068</Property>
-			<Item Name="Mod2" Type="RIO C Series Module">
-				<Property Name="crio.Calibration" Type="Str">1</Property>
-				<Property Name="crio.Location" Type="Str">Slot 2</Property>
-				<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
-				<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
-				<Property Name="crio.Type" Type="Str">NI 9401</Property>
-				<Property Name="cRIOModule.DIO3_0InitialDir" Type="Str">0</Property>
-				<Property Name="cRIOModule.DIO7_4InitialDir" Type="Str">0</Property>
-				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
-				<Property Name="cRIOModule.NumSyncRegs" Type="Str">11111111</Property>
-				<Item Name="DIO0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Real-Time Scan Resources" Type="Module Container">
+				<Property Name="crio.ModuleContainerType" Type="Str">crio.RSIModuleContainer</Property>
+				<Item Name="Mod2" Type="RIO C Series Module">
+					<Property Name="crio.Calibration" Type="Str">1</Property>
+					<Property Name="crio.Location" Type="Str">Slot 2</Property>
+					<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
+					<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
+					<Property Name="crio.Type" Type="Str">NI 9401</Property>
+					<Property Name="cRIOModule.DIO3_0InitialDir" Type="Str">0</Property>
+					<Property Name="cRIOModule.DIO7_4InitialDir" Type="Str">0</Property>
+					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+					<Property Name="cRIOModule.NumSyncRegs" Type="Str">11111111</Property>
+					<Item Name="DIO0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO3" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO3</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO4" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO4</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO5" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO5</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO6" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">6</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO6</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO7" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">7</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO7</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
 				</Item>
-				<Item Name="DIO1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				<Item Name="Mod3" Type="RIO C Series Module">
+					<Property Name="crio.Calibration" Type="Str">1</Property>
+					<Property Name="crio.Location" Type="Str">Slot 3</Property>
+					<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
+					<Property Name="crio.SupportsDynamicRes" Type="Bool">false</Property>
+					<Property Name="crio.Type" Type="Str">NI 9411</Property>
+					<Property Name="cRIOModule.DIO3_0InitialDir" Type="Str">0</Property>
+					<Property Name="cRIOModule.DIO7_4InitialDir" Type="Str">0</Property>
+					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+					<Property Name="cRIOModule.NumSyncRegs" Type="Str">11111111</Property>
+					<Item Name="DI0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DI0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DI1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DI1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DI2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DI2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DI3" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DI3</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DI4" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DI4</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DI5" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DI5</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
 				</Item>
-				<Item Name="DIO2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				<Item Name="Mod4" Type="RIO C Series Module">
+					<Property Name="crio.Calibration" Type="Str">1</Property>
+					<Property Name="crio.Location" Type="Str">Slot 4</Property>
+					<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
+					<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
+					<Property Name="crio.Type" Type="Str">NI 9381</Property>
+					<Property Name="cRIOModule.Allow Programmatic Line Direction" Type="Str">false</Property>
+					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+					<Property Name="cRIOModule.Hot Swap Behavior" Type="Str">0</Property>
+					<Property Name="cRIOModule.Initial Line Direction" Type="Str">"0000"</Property>
+					<Item Name="AI0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI3" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI3</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI4" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI4</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI5" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI5</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI6" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">6</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI6</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI7" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">7</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI7</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO3" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO3</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO4" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO4</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO5" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO5</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO6" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">6</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO6</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AO7" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">7</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AO7</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">8</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">9</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">10</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="DIO3" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">11</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">DIO3</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+					</Item>
 				</Item>
-				<Item Name="DIO3" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				<Item Name="Mod6" Type="RIO C Series Module">
+					<Property Name="crio.Calibration" Type="Str">1</Property>
+					<Property Name="crio.Location" Type="Str">Slot 6</Property>
+					<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
+					<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
+					<Property Name="crio.Type" Type="Str">NI 9219</Property>
+					<Property Name="cRIOModule.CH0.DegreeRange" Type="Str">2</Property>
+					<Property Name="cRIOModule.CH0.Mode" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH0.Range" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH0.RTD_A" Type="Str">3.908300E-3</Property>
+					<Property Name="cRIOModule.CH0.RTD_B" Type="Str">-5.775000E-7</Property>
+					<Property Name="cRIOModule.CH0.RTD_C" Type="Str">-4.183000E-12</Property>
+					<Property Name="cRIOModule.CH0.RTD_Ro" Type="Str">1.000000E+2</Property>
+					<Property Name="cRIOModule.CH0.RTDType" Type="Str">1</Property>
+					<Property Name="cRIOModule.CH0.TCoupleType" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH0.ThresHold" Type="Str">1.500000E+0</Property>
+					<Property Name="cRIOModule.CH1.DegreeRange" Type="Str">2</Property>
+					<Property Name="cRIOModule.CH1.Mode" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH1.Range" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH1.RTD_A" Type="Str">3.908300E-3</Property>
+					<Property Name="cRIOModule.CH1.RTD_B" Type="Str">-5.775000E-7</Property>
+					<Property Name="cRIOModule.CH1.RTD_C" Type="Str">-4.183000E-12</Property>
+					<Property Name="cRIOModule.CH1.RTD_Ro" Type="Str">1.000000E+2</Property>
+					<Property Name="cRIOModule.CH1.RTDType" Type="Str">1</Property>
+					<Property Name="cRIOModule.CH1.TCoupleType" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH1.ThresHold" Type="Str">1.500000E+0</Property>
+					<Property Name="cRIOModule.CH2.DegreeRange" Type="Str">2</Property>
+					<Property Name="cRIOModule.CH2.Mode" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH2.Range" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH2.RTD_A" Type="Str">3.908300E-3</Property>
+					<Property Name="cRIOModule.CH2.RTD_B" Type="Str">-5.775000E-7</Property>
+					<Property Name="cRIOModule.CH2.RTD_C" Type="Str">-4.183000E-12</Property>
+					<Property Name="cRIOModule.CH2.RTD_Ro" Type="Str">1.000000E+2</Property>
+					<Property Name="cRIOModule.CH2.RTDType" Type="Str">1</Property>
+					<Property Name="cRIOModule.CH2.TCoupleType" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH2.ThresHold" Type="Str">1.500000E+0</Property>
+					<Property Name="cRIOModule.CH3.DegreeRange" Type="Str">2</Property>
+					<Property Name="cRIOModule.CH3.Mode" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH3.Range" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH3.RTD_A" Type="Str">3.908300E-3</Property>
+					<Property Name="cRIOModule.CH3.RTD_B" Type="Str">-5.775000E-7</Property>
+					<Property Name="cRIOModule.CH3.RTD_C" Type="Str">-4.183000E-12</Property>
+					<Property Name="cRIOModule.CH3.RTD_Ro" Type="Str">1.000000E+2</Property>
+					<Property Name="cRIOModule.CH3.RTDType" Type="Str">1</Property>
+					<Property Name="cRIOModule.CH3.TCoupleType" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH3.ThresHold" Type="Str">1.500000E+0</Property>
+					<Property Name="cRIOModule.Conversion Time" Type="Str">0</Property>
+					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+					<Property Name="cRIOModule.TEDSSupport" Type="Str">true</Property>
+					<Item Name="CH0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">CH0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="CH1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">CH1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="CH2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">CH2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="CH3" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">CH3</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
 				</Item>
-				<Item Name="DIO4" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO4</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				<Item Name="Mod7" Type="RIO C Series Module">
+					<Property Name="crio.Calibration" Type="Str">1</Property>
+					<Property Name="crio.Location" Type="Str">Slot 7</Property>
+					<Property Name="crio.RequiresValidation" Type="Bool">true</Property>
+					<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
+					<Property Name="crio.Type" Type="Str">NI 9225</Property>
+					<Property Name="cRIOModule.ClockSource" Type="Str">0</Property>
+					<Property Name="cRIOModule.DataRate" Type="Str">1</Property>
+					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+					<Property Name="cRIOModule.ExcitationVoltage" Type="Str">1</Property>
+					<Property Name="cRIOModule.ExternalClockSource" Type="Str"></Property>
+					<Property Name="cRIOModule.ExtTimeBaseType" Type="Str"></Property>
+					<Property Name="cRIOModule.HalfBridgeEnable" Type="Str">0</Property>
+					<Property Name="cRIOModule.InputConfiguration" Type="Str">0</Property>
+					<Property Name="cRIOModule.SourceModule" Type="Str">false</Property>
+					<Property Name="cRIOModule.SubPanVisitedVersion" Type="Str">0</Property>
+					<Property Name="cRIOModule.TEDSSupport" Type="Str">false</Property>
+					<Item Name="AI0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
 				</Item>
-				<Item Name="DIO5" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO5</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DIO6" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">6</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO6</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DIO7" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">7</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO7</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-			</Item>
-			<Item Name="Mod3" Type="RIO C Series Module">
-				<Property Name="crio.Calibration" Type="Str">1</Property>
-				<Property Name="crio.Location" Type="Str">Slot 3</Property>
-				<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
-				<Property Name="crio.SupportsDynamicRes" Type="Bool">false</Property>
-				<Property Name="crio.Type" Type="Str">NI 9411</Property>
-				<Property Name="cRIOModule.DIO3_0InitialDir" Type="Str">0</Property>
-				<Property Name="cRIOModule.DIO7_4InitialDir" Type="Str">0</Property>
-				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
-				<Property Name="cRIOModule.NumSyncRegs" Type="Str">11111111</Property>
-				<Item Name="DI0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DI0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DI1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DI1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DI2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DI2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DI3" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DI3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DI4" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DI4</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DI5" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DI5</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-			</Item>
-			<Item Name="Mod4" Type="RIO C Series Module">
-				<Property Name="crio.Calibration" Type="Str">1</Property>
-				<Property Name="crio.Location" Type="Str">Slot 4</Property>
-				<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
-				<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
-				<Property Name="crio.Type" Type="Str">NI 9381</Property>
-				<Property Name="cRIOModule.Allow Programmatic Line Direction" Type="Str">false</Property>
-				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
-				<Property Name="cRIOModule.Hot Swap Behavior" Type="Str">0</Property>
-				<Property Name="cRIOModule.Initial Line Direction" Type="Str">"0000"</Property>
-				<Item Name="AI0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI3" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI4" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI4</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI5" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI5</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI6" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">6</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI6</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI7" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">7</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI7</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO3" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO4" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO4</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO5" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO5</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO6" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">6</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO6</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AO7" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">7</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AO7</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DIO0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">8</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DIO1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">9</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DIO2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">10</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="DIO3" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">11</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">DIO3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">&amp;1!!!"-!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
-				</Item>
-			</Item>
-			<Item Name="Mod6" Type="RIO C Series Module">
-				<Property Name="crio.Calibration" Type="Str">1</Property>
-				<Property Name="crio.Location" Type="Str">Slot 6</Property>
-				<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
-				<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
-				<Property Name="crio.Type" Type="Str">NI 9219</Property>
-				<Property Name="cRIOModule.CH0.DegreeRange" Type="Str">2</Property>
-				<Property Name="cRIOModule.CH0.Mode" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH0.Range" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH0.RTD_A" Type="Str">3.908300E-3</Property>
-				<Property Name="cRIOModule.CH0.RTD_B" Type="Str">-5.775000E-7</Property>
-				<Property Name="cRIOModule.CH0.RTD_C" Type="Str">-4.183000E-12</Property>
-				<Property Name="cRIOModule.CH0.RTD_Ro" Type="Str">1.000000E+2</Property>
-				<Property Name="cRIOModule.CH0.RTDType" Type="Str">1</Property>
-				<Property Name="cRIOModule.CH0.TCoupleType" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH0.ThresHold" Type="Str">1.500000E+0</Property>
-				<Property Name="cRIOModule.CH1.DegreeRange" Type="Str">2</Property>
-				<Property Name="cRIOModule.CH1.Mode" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH1.Range" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH1.RTD_A" Type="Str">3.908300E-3</Property>
-				<Property Name="cRIOModule.CH1.RTD_B" Type="Str">-5.775000E-7</Property>
-				<Property Name="cRIOModule.CH1.RTD_C" Type="Str">-4.183000E-12</Property>
-				<Property Name="cRIOModule.CH1.RTD_Ro" Type="Str">1.000000E+2</Property>
-				<Property Name="cRIOModule.CH1.RTDType" Type="Str">1</Property>
-				<Property Name="cRIOModule.CH1.TCoupleType" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH1.ThresHold" Type="Str">1.500000E+0</Property>
-				<Property Name="cRIOModule.CH2.DegreeRange" Type="Str">2</Property>
-				<Property Name="cRIOModule.CH2.Mode" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH2.Range" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH2.RTD_A" Type="Str">3.908300E-3</Property>
-				<Property Name="cRIOModule.CH2.RTD_B" Type="Str">-5.775000E-7</Property>
-				<Property Name="cRIOModule.CH2.RTD_C" Type="Str">-4.183000E-12</Property>
-				<Property Name="cRIOModule.CH2.RTD_Ro" Type="Str">1.000000E+2</Property>
-				<Property Name="cRIOModule.CH2.RTDType" Type="Str">1</Property>
-				<Property Name="cRIOModule.CH2.TCoupleType" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH2.ThresHold" Type="Str">1.500000E+0</Property>
-				<Property Name="cRIOModule.CH3.DegreeRange" Type="Str">2</Property>
-				<Property Name="cRIOModule.CH3.Mode" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH3.Range" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH3.RTD_A" Type="Str">3.908300E-3</Property>
-				<Property Name="cRIOModule.CH3.RTD_B" Type="Str">-5.775000E-7</Property>
-				<Property Name="cRIOModule.CH3.RTD_C" Type="Str">-4.183000E-12</Property>
-				<Property Name="cRIOModule.CH3.RTD_Ro" Type="Str">1.000000E+2</Property>
-				<Property Name="cRIOModule.CH3.RTDType" Type="Str">1</Property>
-				<Property Name="cRIOModule.CH3.TCoupleType" Type="Str">0</Property>
-				<Property Name="cRIOModule.CH3.ThresHold" Type="Str">1.500000E+0</Property>
-				<Property Name="cRIOModule.Conversion Time" Type="Str">0</Property>
-				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
-				<Property Name="cRIOModule.TEDSSupport" Type="Str">true</Property>
-				<Item Name="CH0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">CH0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="CH1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">CH1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="CH2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">CH2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="CH3" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">CH3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-			</Item>
-			<Item Name="Mod7" Type="RIO C Series Module">
-				<Property Name="crio.Calibration" Type="Str">1</Property>
-				<Property Name="crio.Location" Type="Str">Slot 7</Property>
-				<Property Name="crio.RequiresValidation" Type="Bool">true</Property>
-				<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
-				<Property Name="crio.Type" Type="Str">NI 9225</Property>
-				<Property Name="cRIOModule.ClockSource" Type="Str">0</Property>
-				<Property Name="cRIOModule.DataRate" Type="Str">1</Property>
-				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
-				<Property Name="cRIOModule.ExcitationVoltage" Type="Str">1</Property>
-				<Property Name="cRIOModule.ExternalClockSource" Type="Str"></Property>
-				<Property Name="cRIOModule.ExtTimeBaseType" Type="Str"></Property>
-				<Property Name="cRIOModule.HalfBridgeEnable" Type="Str">0</Property>
-				<Property Name="cRIOModule.InputConfiguration" Type="Str">0</Property>
-				<Property Name="cRIOModule.SourceModule" Type="Str">false</Property>
-				<Property Name="cRIOModule.SubPanVisitedVersion" Type="Str">0</Property>
-				<Property Name="cRIOModule.TEDSSupport" Type="Str">false</Property>
-				<Item Name="AI0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-			</Item>
-			<Item Name="Mod8" Type="RIO C Series Module">
-				<Property Name="crio.Calibration" Type="Str">1</Property>
-				<Property Name="crio.Location" Type="Str">Slot 8</Property>
-				<Property Name="crio.RequiresValidation" Type="Bool">true</Property>
-				<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
-				<Property Name="crio.Type" Type="Str">NI 9227</Property>
-				<Property Name="cRIOModule.ClockSource" Type="Str">0</Property>
-				<Property Name="cRIOModule.DataRate" Type="Str">1</Property>
-				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
-				<Property Name="cRIOModule.ExcitationVoltage" Type="Str">1</Property>
-				<Property Name="cRIOModule.ExternalClockSource" Type="Str"></Property>
-				<Property Name="cRIOModule.ExtTimeBaseType" Type="Str"></Property>
-				<Property Name="cRIOModule.HalfBridgeEnable" Type="Str">0</Property>
-				<Property Name="cRIOModule.InputConfiguration" Type="Str">0</Property>
-				<Property Name="cRIOModule.SourceModule" Type="Str">false</Property>
-				<Property Name="cRIOModule.SubPanVisitedVersion" Type="Str">0</Property>
-				<Property Name="cRIOModule.TEDSSupport" Type="Str">false</Property>
-				<Item Name="AI0" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI0</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI1" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI1</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI2" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI2</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
-				</Item>
-				<Item Name="AI3" Type="Variable">
-					<Property Name="featurePacks" Type="Str">Industrial</Property>
-					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
-					<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
-					<Property Name="Industrial:IODirection" Type="Str">Input</Property>
-					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
-					<Property Name="Industrial:Mode" Type="Str">1</Property>
-					<Property Name="Industrial:PhysicalName" Type="Str">AI3</Property>
-					<Property Name="Network:UseBinding" Type="Str">False</Property>
-					<Property Name="Network:UseBuffering" Type="Str">False</Property>
-					<Property Name="numTypedefs" Type="UInt">0</Property>
-					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"-!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+				<Item Name="Mod8" Type="RIO C Series Module">
+					<Property Name="crio.Calibration" Type="Str">1</Property>
+					<Property Name="crio.Location" Type="Str">Slot 8</Property>
+					<Property Name="crio.RequiresValidation" Type="Bool">true</Property>
+					<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
+					<Property Name="crio.Type" Type="Str">NI 9227</Property>
+					<Property Name="cRIOModule.ClockSource" Type="Str">0</Property>
+					<Property Name="cRIOModule.DataRate" Type="Str">1</Property>
+					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+					<Property Name="cRIOModule.ExcitationVoltage" Type="Str">1</Property>
+					<Property Name="cRIOModule.ExternalClockSource" Type="Str"></Property>
+					<Property Name="cRIOModule.ExtTimeBaseType" Type="Str"></Property>
+					<Property Name="cRIOModule.HalfBridgeEnable" Type="Str">0</Property>
+					<Property Name="cRIOModule.InputConfiguration" Type="Str">0</Property>
+					<Property Name="cRIOModule.SourceModule" Type="Str">false</Property>
+					<Property Name="cRIOModule.SubPanVisitedVersion" Type="Str">0</Property>
+					<Property Name="cRIOModule.TEDSSupport" Type="Str">false</Property>
+					<Item Name="AI0" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI0</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI1" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI1</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI2" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI2</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
+					<Item Name="AI3" Type="Variable">
+						<Property Name="featurePacks" Type="Str">Industrial</Property>
+						<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+						<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
+						<Property Name="Industrial:IODirection" Type="Str">Input</Property>
+						<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+						<Property Name="Industrial:Mode" Type="Str">1</Property>
+						<Property Name="Industrial:PhysicalName" Type="Str">AI3</Property>
+						<Property Name="Network:BuffSize" Type="Str">50</Property>
+						<Property Name="Network:UseBinding" Type="Str">False</Property>
+						<Property Name="Network:UseBuffering" Type="Str">False</Property>
+						<Property Name="numTypedefs" Type="UInt">0</Property>
+						<Property Name="type" Type="Str">Industrial</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					</Item>
 				</Item>
 			</Item>
 		</Item>
@@ -1060,7 +1108,6 @@ DirectoryIndex index.htm
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
@@ -1089,12 +1136,12 @@ DirectoryIndex index.htm
 				<Item Name="LogRotate.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/LogRotate/LogRotate.lvclass"/>
 				<Item Name="TDMS datalogger runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/TDMS Datalogger/execution/TDMS datalogger runtime.lvclass"/>
 				<Item Name="TDMS datalogger configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/TDMS Datalogger/configuration/TDMS datalogger configuration.lvclass"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 			</Item>
 			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="nirviCommon.vi" Type="VI" URL="/&lt;vilib&gt;/express/rvi/timingcommon/nirviCommon.vi"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="cRIO Benchmarking EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -1105,7 +1152,6 @@ DirectoryIndex index.htm
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{378EB190-78A0-4787-B47A-74887D2E1D14}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">cRIO Benchmarking EXE</Property>
-				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
