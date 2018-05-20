@@ -42,10 +42,6 @@
 				<Property Name="utf.test.bind" Type="Str">Benchmark PID tests.lvlib:init runtime test.vi</Property>
 				<Property Name="utf.vector.test.bind" Type="Str">88015061-B821-199F-72CE-9F744CB094EF</Property>
 			</Item>
-			<Item Name="modify channel test.lvtest" Type="TestItem" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2018/ProjectTemplates/Source/dcaf plugin/Dynamic/testing/modify channel test.lvtest">
-				<Property Name="utf.test.bind" Type="Str">Benchmark PID tests.lvlib:modify channel test.vi</Property>
-				<Property Name="utf.vector.test.bind" Type="Str">4341B990-AD0E-19E2-83DD-34572ACC8AE7</Property>
-			</Item>
 			<Item Name="serialization tests.lvtest" Type="TestItem" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2018/ProjectTemplates/Source/dcaf plugin/Dynamic/testing/serialization tests.lvtest">
 				<Property Name="utf.test.bind" Type="Str">Benchmark PID tests.lvlib:serialization tests.vi</Property>
 				<Property Name="utf.vector.test.bind" Type="Str">426BCB85-35F1-7306-1012-4CDF83E375C7</Property>
